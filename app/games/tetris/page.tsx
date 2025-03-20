@@ -18,7 +18,6 @@ const GameFrame: React.FC = () => {
         </div>
 
        {} <iframe
-          //src="https://tetris-23px.vercel.app/"
           src="https://tetris.arrowcole.xyz/"
           className="w-full h-screen border-none"
           title="tetris"
