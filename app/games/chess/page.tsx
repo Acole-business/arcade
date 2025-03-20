@@ -2,9 +2,7 @@
 
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-
 const GameFrame: React.FC = () => {
-
 
   return (
     <div className="min-h-screen bg-black text-green-500 font-mono p-4 flex flex-col">
