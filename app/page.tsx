@@ -566,21 +566,21 @@ export default function Home() {
         <p>
           Created by{" "}
           <a
-            href="https://griffen.codes"
+            href="https://aaroncole.dev"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-green-300"
           >
-            griffen.codes
+            Aaroncole.dev
           </a>{" "}
           and{" "}
           <a
-            href="https://v0.dev"
+            href="acolegames.dev"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-green-300"
           >
-            v0.dev
+            Acolegames.dev
           </a>
           , an AI-powered development tool from{" "}
           <a
