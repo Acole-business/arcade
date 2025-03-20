@@ -20,7 +20,7 @@ const GameFrame: React.FC = () => {
         <iframe
           src="https://acole-chess.app"
           className="w-full h-screen border-none"
-          title="Acole Games"
+          title="Acole Chess"
         ></iframe>
       </div>
 
