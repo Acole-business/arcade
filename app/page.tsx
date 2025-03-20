@@ -547,8 +547,8 @@ export default function Home() {
                       href="/games/button-clicker"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
-                      <span className="text-yellow-400">[39]</span> Test Game - A
-                      simple game to test your skills
+                      <span className="text-yellow-400">[39]</span> Button Clicker -
+                      Click the button as fast as you can!
                     </Link>
                   </li>
                 </ul>
@@ -557,6 +557,7 @@ export default function Home() {
               <section className="terminal-input mt-auto  ">
                 <div className="flex items-center">
                   <span className="text-green-500 mr-2">guest@arcade:~$</span>
+                  {/* <span className="text-green-500 mr 2">admin@arcade:~$ </span> */}
                   <div className="relative flex-1">
                     <input
                       type="text"
