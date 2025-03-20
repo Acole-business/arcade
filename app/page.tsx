@@ -137,6 +137,9 @@ export default function Home() {
         case "40":
           router.push("/games/chess");
           break;
+        case "41":
+          router.push("/games/tetis");
+          break;
         default:
           console.log("Invalid command");
       }
@@ -180,7 +183,7 @@ export default function Home() {
                   <span className="absolute hidden -right-2 top-0 h-full w-2 bg-green-500 animate-blink duration-800"></span>
                 </h1>
               </div>
-              <div className="text-xs">v1.0.0 | Games: 39</div>
+              <div className="text-xs">v1.0.0 | Games: 41</div>
             </div>
 
             <div className="terminal-content flex-grow space-y-6 mb-4 relative z-10">
@@ -561,6 +564,15 @@ export default function Home() {
                     >
                       <span className="text-yellow-400">[40]</span> Chess -
                       Play a game of chess against the computer or a friend
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/games/tetris"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[41]</span> Tetris -
+                      Classic falling block puzzle game
                     </Link>
                   </li>
                 </ul>
