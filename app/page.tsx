@@ -134,6 +134,9 @@ export default function Home() {
         case "39":
           router.push("/games/button-clicker");
           break;
+        case "40":
+          router.push("/games/chess");
+          break;
         default:
           console.log("Invalid command");
       }
@@ -549,6 +552,15 @@ export default function Home() {
                     >
                       <span className="text-yellow-400">[39]</span> Button Clicker -
                       Click the button as fast as you can!
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/games/chess"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[40]</span> Chess -
+                      Play a game of chess against the computer or a friend
                     </Link>
                   </li>
                 </ul>
