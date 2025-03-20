@@ -107,7 +107,7 @@ export default function OneSecondChallenge() {
             <span>Back to Arcade</span>
           </Link>
           <div className="text-xs">
-            games.griffen.codes | One-Second Challenge v2.0
+            arrowcole.xyz | One-Second Challenge v2.0
           </div>
         </div>
 

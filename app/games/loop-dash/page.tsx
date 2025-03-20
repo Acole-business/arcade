@@ -162,7 +162,7 @@ export default function LoopDash() {
             <ArrowLeft className="h-4 w-4" />
             <span>Back to Arcade</span>
           </Link>
-          <div className="text-xs">games.griffen.codes | Loop Dash v2.0</div>
+          <div className="text-xs">arrowcole.xyz | Loop Dash v2.0</div>
         </div>
 
         <div className="game-container space-y-6">

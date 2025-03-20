@@ -477,7 +477,7 @@ export default function MorseCodeTrainer() {
             <span>Back to Arcade</span>
           </Link>
           <div className="text-xs">
-            games.griffen.codes | Morse Code Trainer v2.2
+            arrowcole.xyz | Morse Code Trainer v2.2
           </div>
         </div>
 

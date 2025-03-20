@@ -292,7 +292,7 @@ export default function JumpKingLite() {
             <ArrowLeft className="h-4 w-4" />
             <span>Back to Arcade</span>
           </Link>
-          <div className="text-xs">games.griffen.codes | Jump King Lite v1.3</div>
+          <div className="text-xs">arrowcole.xyz | Jump King Lite v1.3</div>
         </div>
 
         <div className="game-container space-y-6">

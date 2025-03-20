@@ -154,7 +154,7 @@ export default function SimonSays() {
             <ArrowLeft className="h-4 w-4" />
             <span>Back to Arcade</span>
           </Link>
-          <div className="text-xs">games.griffen.codes | Simon Says v2.0</div>
+          <div className="text-xs">arrowcole.xyz | Simon Says v2.0</div>
         </div>
 
         <div className="game-container space-y-6">

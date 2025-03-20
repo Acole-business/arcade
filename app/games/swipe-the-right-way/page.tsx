@@ -228,7 +228,7 @@ export default function SwipeTheRightWay() {
             <ArrowLeft className="h-4 w-4" />
             <span>Back to Arcade</span>
           </Link>
-          <div className="text-xs">games.griffen.codes | Swipe the Right Way v1.0</div>
+          <div className="text-xs">arrowcole.xyz | Swipe the Right Way v1.0</div>
         </div>
 
         <div className="game-container space-y-6">

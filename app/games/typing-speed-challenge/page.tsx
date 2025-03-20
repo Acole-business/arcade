@@ -320,7 +320,7 @@ export default function TypingSpeedChallenge() {
             <ArrowLeft className="h-4 w-4" />
             <span>Back to Arcade</span>
           </Link>
-          <div className="text-xs">games.griffen.codes | Typing Speed Challenge v1.1</div>
+          <div className="text-xs">arrowcole.xyz | Typing Speed Challenge v1.1</div>
         </div>
 
         <div className="game-container space-y-6">

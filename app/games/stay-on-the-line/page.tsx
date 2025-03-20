@@ -205,7 +205,7 @@ export default function StayOnTheLine() {
             <span>Back to Arcade</span>
           </Link>
           <div className="text-xs">
-            games.griffen.codes | Stay on the Line v1.0
+            arrowcole.xyz | Stay on the Line v1.0
           </div>
         </div>
 
