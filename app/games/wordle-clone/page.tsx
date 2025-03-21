@@ -1,10 +1,8 @@
 "use client";
 
-import type React from "react";
-
+import React, { useEffect, useState } from "react";
 import { ArrowLeft, RefreshCw } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 const WORD_LENGTH = 5;
 const MAX_GUESSES = 6;
@@ -19,6 +17,16 @@ const WORDS = [
   "ARCADE",
   "CODER",
   "LOGIC",
+  "FUNNY",
+  "SCORE",
+  "LEVEL",
+  "TARGET",
+  "CLICK",
+  "SUDOKU",
+  "EMOJI",
+  "FLASH",
+  "TIMER",
+  "SPEED",
 ];
 
 export default function WordleClone() {
@@ -69,22 +77,47 @@ export default function WordleClone() {
       setCurrentGuess("");
     } else if (e.key === "Backspace") {
       setCurrentGuess(currentGuess.slice(0, -1));
-    } else if (/^[A-Za-z]$/.test(e.key) && currentGuess.length < WORD_LENGTH) {
-      setCurrentGuess(currentGuess + e.key.toUpperCase());
     }
   };
 
   const renderGuess = (guess: string, isCurrentGuess = false) => {
     const tiles = [];
+    const targetLetters = targetWord.split("");
+    const guessLetters = guess.split("");
+
+    const status: ("green" | "yellow" | "gray")[] = Array(WORD_LENGTH).fill("gray");
+    const targetLetterUsage = Array(WORD_LENGTH).fill(false);
+
+    // First pass: find greens
+    for (let i = 0; i < WORD_LENGTH; i++) {
+      if (guessLetters[i] === targetLetters[i]) {
+        status[i] = "green";
+        targetLetterUsage[i] = true;
+      }
+    }
+
+    // Second pass: find yellows
+    for (let i = 0; i < WORD_LENGTH; i++) {
+      if (status[i] === "green") continue;
+
+      for (let j = 0; j < WORD_LENGTH; j++) {
+        if (!targetLetterUsage[j] && guessLetters[i] === targetLetters[j]) {
+          status[i] = "yellow";
+          targetLetterUsage[j] = true;
+          break;
+        }
+      }
+    }
+
     for (let i = 0; i < WORD_LENGTH; i++) {
       const letter = guess[i] || "";
       let className =
         "w-12 h-12 border border-green-500 flex items-center justify-center text-2xl";
 
       if (!isCurrentGuess && letter) {
-        if (targetWord[i] === letter) {
+        if (status[i] === "green") {
           className += " bg-green-700";
-        } else if (targetWord.includes(letter)) {
+        } else if (status[i] === "yellow") {
           className += " bg-yellow-700";
         } else {
           className += " bg-gray-700";
@@ -92,14 +125,12 @@ export default function WordleClone() {
       }
 
       tiles.push(
-        <div
-          key={i}
-          className={className}
-        >
+        <div key={i} className={className}>
           {letter}
         </div>
       );
     }
+
     return <div className="flex gap-2 mb-2">{tiles}</div>;
   };
 
@@ -167,7 +198,12 @@ export default function WordleClone() {
               <input
                 type="text"
                 value={currentGuess}
-                onChange={(e) => setCurrentGuess(e.target.value.toUpperCase())}
+                onChange={(e) => {
+                  const value = e.target.value.toUpperCase();
+                  if (value.length <= WORD_LENGTH) {
+                    setCurrentGuess(value);
+                  }
+                }}
                 onKeyDown={handleKeyPress}
                 maxLength={WORD_LENGTH}
                 className="bg-black border border-green-500 text-green-500 px-3 py-2 w-40 text-center"
