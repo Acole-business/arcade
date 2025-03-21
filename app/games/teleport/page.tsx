@@ -5,7 +5,8 @@ import React, { useEffect } from 'react';
 const TeleportLink: React.FC = () => {
   useEffect(() => {
     // Open the external URL in a new tab
-    const newTab = window.open('https://acolegames.dev', '_blank');
+    // const newTab = window.open('https://acolegames.dev', '_blank');
+    const newTab = window.open('https://sites.google.com/view/acoleschoolgames/', '_blank');
 
     // After a short delay, navigate the user back to the homepage
     setTimeout(() => {
