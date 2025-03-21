@@ -17,6 +17,9 @@ export default function Home() {
   const handleCommand = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       switch (command) {
+        case "0":
+          router.push("/contact/teleport");
+          break;
         case "1":
           router.push("/games/blackjack");
           break;
@@ -208,7 +211,7 @@ export default function Home() {
                 <ul className="space-y-2 flex flex-grow flex-col">
                   <li>
                     <Link
-                      href="/games/teleport"
+                      href="/contact/teleport"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[0]</span> Old Acolegames -  
@@ -648,6 +651,15 @@ export default function Home() {
             className="underline hover:text-green-300"
           >
             vercel
+          </a>
+          , Contact Form{" "}
+          <a
+            href="contact/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-green-300"
+          >
+            Here
           </a>
         </p>
         <p className="mt-1">Press F11 for fullscreen experience</p>
