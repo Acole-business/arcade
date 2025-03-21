@@ -60,7 +60,7 @@ export default function Home() {
           router.push("/games/duck-hunt");
           break;
         case "15":
-          router.push("/games/sudoku-lite");
+          router.push("/games/catch-the-target");
           break;
         case "16":
           router.push("/games/typing-speed-challenge");
@@ -334,11 +334,11 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/sudoku-lite"
+                      href="/games/catch-the-target"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
-                      <span className="text-yellow-400">[15]</span> Sudoku Lite
-                      - Simplified Sudoku with a 6x6 grid
+                      <span className="text-yellow-400">[15]</span> Catch the
+                      Target - Click the moving target to score points
                     </Link>
                   </li>
                   <li>
