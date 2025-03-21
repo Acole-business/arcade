@@ -208,6 +208,15 @@ export default function Home() {
                 <ul className="space-y-2 flex flex-grow flex-col">
                   <li>
                     <Link
+                      href="/games/teleport"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[0]</span> Old Acolegames -  
+                      Link to the old Acolegames website
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href="/games/blackjack"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
