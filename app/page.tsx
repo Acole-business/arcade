@@ -655,7 +655,14 @@ export default function Home() {
           , Contact Form{" "}
           <a
             href="other-links/contact"
-            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-green-300"
+          >
+            Here
+          </a>
+          , Robotics Page{" "}
+          <a
+            href="other-links/robotics"
             rel="noopener noreferrer"
             className="underline hover:text-green-300"
           >
