@@ -10,7 +10,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Arcade",
+  title: "Acole Arcade",
   description:
     "A showcase of retro terminal-style games for the web built on Next and React.",
 };

@@ -2,17 +2,25 @@
 
 import { useState } from 'react';
 
-export default function AlgaeAndLevelsPage() {
-  const [levels, setLevels] = useState({
-    L1: 0,
-    L2: 0,
-    L3: 0,
-    L4: 0,
-  });
-
-  const [processor, setProcessor] = useState(0);
-  const [net, setNet] = useState(0);
-
+function ControlPanel({
+  title,
+  levels,
+  setLevels,
+  processor,
+  setProcessor,
+  net,
+  setNet,
+  hideAlgae,
+}: {
+  title: string;
+  levels: { L1: number; L2: number; L3: number; L4: number };
+  setLevels: React.Dispatch<React.SetStateAction<{ L1: number; L2: number; L3: number; L4: number }>>;
+  processor?: number;
+  setProcessor?: React.Dispatch<React.SetStateAction<number>>;
+  net?: number;
+  setNet?: React.Dispatch<React.SetStateAction<number>>;
+  hideAlgae?: boolean;
+}) {
   const handleIncrement = (level: keyof typeof levels) => {
     setLevels((prev) => ({
       ...prev,
@@ -27,52 +35,46 @@ export default function AlgaeAndLevelsPage() {
     }));
   };
 
-  const resetAll = () => {
-    setLevels({ L1: 0, L2: 0, L3: 0, L4: 0 });
-    setProcessor(0);
-    setNet(0);
-  };
-
   return (
-    <main className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="p-8 bg-white rounded-2xl shadow-xl space-y-8 w-96">
-        <h1 className="text-3xl font-bold text-center">Algae & Levels Control</h1>
+    <div className="p-6 bg-white rounded-2xl shadow-xl space-y-6 w-96">
+      <h2 className="text-2xl font-bold text-center">{title}</h2>
 
-        {/* Levels Section */}
-        <div className="space-y-4">
-          {Object.keys(levels).map((level) => (
-            <div
-              key={level}
-              className="flex items-center justify-between gap-4 border rounded-xl p-4 shadow"
-            >
-              <span className="font-semibold">{level}</span>
-              <div className="flex items-center gap-2">
-                <button
-                  onClick={() => handleDecrement(level as keyof typeof levels)}
-                  className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
-                >
-                  -
-                </button>
-                <span className="w-6 text-center">{levels[level as keyof typeof levels]}</span>
-                <button
-                  onClick={() => handleIncrement(level as keyof typeof levels)}
-                  className="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600"
-                >
-                  +
-                </button>
-              </div>
+      {/* Levels Section */}
+      <div className="space-y-4">
+        {Object.keys(levels).map((level) => (
+          <div
+            key={level}
+            className="flex items-center justify-between gap-4 border rounded-xl p-3 shadow"
+          >
+            <span className="font-semibold">{level}</span>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => handleDecrement(level as keyof typeof levels)}
+                className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
+              >
+                -
+              </button>
+              <span className="w-6 text-center">{levels[level as keyof typeof levels]}</span>
+              <button
+                onClick={() => handleIncrement(level as keyof typeof levels)}
+                className="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600"
+              >
+                +
+              </button>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
 
-        {/* Algae Section */}
+      {/* Algae Section */}
+      {!hideAlgae && (
         <div className="space-y-4 pt-4 border-t">
-          <div className="flex items-center justify-between gap-4 border rounded-xl p-4 shadow">
+          <div className="flex items-center justify-between gap-4 border rounded-xl p-3 shadow">
             <span className="font-semibold">Processor</span>
             <div className="flex items-center gap-2">
               <span className="text-xl">{processor}</span>
               <button
-                onClick={() => setProcessor((prev) => prev + 1)}
+                onClick={() => setProcessor && setProcessor((prev) => prev + 1)}
                 className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600"
               >
                 Add Algae
@@ -80,12 +82,12 @@ export default function AlgaeAndLevelsPage() {
             </div>
           </div>
 
-          <div className="flex items-center justify-between gap-4 border rounded-xl p-4 shadow">
+          <div className="flex items-center justify-between gap-4 border rounded-xl p-3 shadow">
             <span className="font-semibold">Net</span>
             <div className="flex items-center gap-2">
               <span className="text-xl">{net}</span>
               <button
-                onClick={() => setNet((prev) => prev + 1)}
+                onClick={() => setNet && setNet((prev) => prev + 1)}
                 className="bg-teal-500 text-white px-3 py-1 rounded hover:bg-teal-600"
               >
                 Add Algae
@@ -93,17 +95,52 @@ export default function AlgaeAndLevelsPage() {
             </div>
           </div>
         </div>
+      )}
+    </div>
+  );
+}
 
-        {/* Reset Button */}
-        <div className="pt-4 border-t text-center">
-          <button
-            onClick={resetAll}
-            className="bg-gray-700 text-white px-6 py-2 rounded hover:bg-gray-800"
-          >
-            Reset All
-          </button>
-        </div>
+export default function AlgaeAndLevelsSplitPage() {
+  const [autoLevels, setAutoLevels] = useState({ L1: 0, L2: 0, L3: 0, L4: 0 });
+
+  const [teleopLevels, setTeleopLevels] = useState({ L1: 0, L2: 0, L3: 0, L4: 0 });
+  const [teleopProcessor, setTeleopProcessor] = useState(0);
+  const [teleopNet, setTeleopNet] = useState(0);
+
+  const resetAll = () => {
+    setAutoLevels({ L1: 0, L2: 0, L3: 0, L4: 0 });
+    setTeleopLevels({ L1: 0, L2: 0, L3: 0, L4: 0 });
+    setTeleopProcessor(0);
+    setTeleopNet(0);
+  };
+
+  return (
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-8 space-y-6">
+      <div className="flex gap-8">
+        <ControlPanel
+          title="Auto"
+          levels={autoLevels}
+          setLevels={setAutoLevels}
+          hideAlgae
+        />
+        <ControlPanel
+          title="Teleop"
+          levels={teleopLevels}
+          setLevels={setTeleopLevels}
+          processor={teleopProcessor}
+          setProcessor={setTeleopProcessor}
+          net={teleopNet}
+          setNet={setTeleopNet}
+        />
       </div>
+
+      {/* Big Reset Button */}
+      <button
+        onClick={resetAll}
+        className="bg-gray-800 text-white px-10 py-3 rounded-2xl shadow-xl hover:bg-gray-900"
+      >
+        Reset All
+      </button>
     </main>
   );
 }
