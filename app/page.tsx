@@ -152,6 +152,9 @@ export default function Home() {
         case "44":
           router.push("/games/uno");
           break;
+        case "45":
+          router.push("/games/space-invaders");
+          break;
         default:
           console.log("Invalid command");
       }
@@ -620,6 +623,14 @@ export default function Home() {
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[44]</span> Uno - Card game
+                    </Link>
+                    </li>
+                    <li>
+                    <Link
+                      href="/games/space-invaders"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[45]</span> Space Invaders - Attack Alliens and help save the earth
                     </Link>
                     </li>
                 </ul>
