@@ -599,6 +599,14 @@ export default function Home() {
                       Classic number puzzle game and solver
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/games/hunger-games"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[43]</span> Hunger Games - Simulator
+                    </Link>
+                  </li>
                 </ul>
               </section>
 
