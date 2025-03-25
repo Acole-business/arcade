@@ -146,6 +146,9 @@ export default function Home() {
         case "42":
           router.push("/games/sudoku");
           break;
+        case "43":
+          router.push("/games/hunger-games");
+          break;
         default:
           console.log("Invalid command");
       }
@@ -189,7 +192,7 @@ export default function Home() {
                   <span className="absolute hidden -right-2 top-0 h-full w-2 bg-green-500 animate-blink duration-800"></span>
                 </h1>
               </div>
-              <div className="text-xs">v1.0.0 | Games: 42</div>
+              <div className="text-xs">v1.0.0 | Games: 43</div>
             </div>
 
             <div className="terminal-content flex-grow space-y-6 mb-4 relative z-10">
