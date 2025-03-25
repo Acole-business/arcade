@@ -20,7 +20,7 @@ export default function BlackjackGame() {
   const [playerScore, setPlayerScore] = useState(0)
   const [dealerScore, setDealerScore] = useState(0)
   const [message, setMessage] = useState("")
-  const [chips, setChips] = useState(100)
+  const [chips, setChips] = useState(5000)
   const [currentBet, setCurrentBet] = useState(0)
   const [loading, setLoading] = useState(true)
 
@@ -156,6 +156,15 @@ export default function BlackjackGame() {
     } else if (newScore === 21) {
       stand()
     }
+    if (newScore === 21) {
+      setMessage("Blackjack! You win!")
+      setGameState("gameOver")
+    } else if (newScore === 21) {
+      stand()
+      
+    } else {
+      
+    }
   }
 
   const stand = () => {
@@ -261,7 +270,7 @@ export default function BlackjackGame() {
             <div className="betting-ui space-y-4">
               <h2 className="text-lg">Place your bet:</h2>
               <div className="flex gap-2 flex-wrap">
-                {[5, 10, 25, 50].map((amount) => (
+                {[5, 10, 25, 50, 100, 1000].map((amount) => (
                   <button
                     key={amount}
                     onClick={() => placeBet(amount)}
