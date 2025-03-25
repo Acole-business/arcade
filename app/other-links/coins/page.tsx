@@ -10,23 +10,33 @@ function CoinCounter() {
     quarters: 0,
   });
 
+  const coinValues = {
+    pennies: 0.01,
+    nickels: 0.05,
+    dimes: 0.10,
+    quarters: 0.25,
+  };
+
   const handleIncrement = (coinType: keyof typeof coins) => {
     setCoins((prev) => ({
       ...prev,
-      [coinType]: prev[coinType] + 1,
+      [coinType]: prev[coinType] + 10,
     }));
   };
 
   const handleDecrement = (coinType: keyof typeof coins) => {
     setCoins((prev) => ({
       ...prev,
-      [coinType]: Math.max(0, prev[coinType] - 1),
+      [coinType]: Math.max(0, prev[coinType] - 10),
     }));
   };
 
   const resetCoins = () => {
     setCoins({ pennies: 0, nickels: 0, dimes: 0, quarters: 0 });
   };
+
+  const totalCoins = Object.values(coins).reduce((acc, count) => acc + count, 0);
+  const totalPrice = Object.entries(coins).reduce((acc, [coin, count]) => acc + count * coinValues[coin as keyof typeof coinValues], 0).toFixed(2);
 
   return (
     <div className="p-6 bg-white rounded-2xl shadow-xl space-y-6 w-96">
@@ -57,6 +67,9 @@ function CoinCounter() {
           </div>
         ))}
       </div>
+
+      <div className="text-center font-semibold text-lg">Total Coins: {totalCoins}</div>
+      <div className="text-center font-semibold text-lg">Total Price: ${totalPrice}</div>
 
       <button
         onClick={resetCoins}
