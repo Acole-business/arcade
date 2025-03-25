@@ -149,6 +149,9 @@ export default function Home() {
         case "43":
           router.push("/games/hunger-games");
           break;
+        case "44":
+          router.push("/games/uno");
+          break;
         default:
           console.log("Invalid command");
       }
@@ -192,7 +195,8 @@ export default function Home() {
                   <span className="absolute hidden -right-2 top-0 h-full w-2 bg-green-500 animate-blink duration-800"></span>
                 </h1>
               </div>
-              <div className="text-xs">v2.0.0 | Games: 43</div>
+              <div className="text-xs">v2.0.0 | Games: 44
+              </div>
             </div>
 
             <div className="terminal-content flex-grow space-y-6 mb-4 relative z-10">
@@ -610,6 +614,14 @@ export default function Home() {
                       <span className="text-yellow-400">[43]</span> Hunger Games - Simulator
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/games/uno"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[44]</span> Uno - Card game
+                    </Link>
+                    </li>
                 </ul>
               </section>
 
