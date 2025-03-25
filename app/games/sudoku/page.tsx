@@ -1,3 +1,4 @@
+// Game 42
 "use client";
 
 import Link from "next/link";

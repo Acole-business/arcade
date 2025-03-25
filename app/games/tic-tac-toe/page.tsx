@@ -1,3 +1,4 @@
+// Game 7
 "use client"
 
 import { ArrowLeft, RefreshCw } from "lucide-react"
