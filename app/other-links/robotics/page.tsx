@@ -14,7 +14,7 @@ function ControlPanel({
 }: {
   title: string;
   levels: { L1: number; L2: number; L3: number; L4: number };
-  setLevels: React.Dispatch<React.SetStateAction<{ L1: number; L2: number; L3: number; L4: number }>>;
+  setLevels: React.Dispatch<React.SetStateAction<{ L4: number; L3: number; L2: number; L1: number }>>;
   processor?: number;
   setProcessor?: React.Dispatch<React.SetStateAction<number>>;
   net?: number;
@@ -101,15 +101,15 @@ function ControlPanel({
 }
 
 export default function AlgaeAndLevelsSplitPage() {
-  const [autoLevels, setAutoLevels] = useState({ L1: 0, L2: 0, L3: 0, L4: 0 });
+  const [autoLevels, setAutoLevels] = useState({ L4: 0, L3: 0, L2: 0, L1: 0 });
 
-  const [teleopLevels, setTeleopLevels] = useState({ L1: 0, L2: 0, L3: 0, L4: 0 });
+  const [teleopLevels, setTeleopLevels] = useState({ L4: 0, L3: 0, L2: 0, L1: 0 });
   const [teleopProcessor, setTeleopProcessor] = useState(0);
   const [teleopNet, setTeleopNet] = useState(0);
 
   const resetAll = () => {
-    setAutoLevels({ L1: 0, L2: 0, L3: 0, L4: 0 });
-    setTeleopLevels({ L1: 0, L2: 0, L3: 0, L4: 0 });
+    setAutoLevels({ L4: 0, L3: 0, L2: 0, L1: 0 });
+    setTeleopLevels({ L4: 0, L3: 0, L2: 0, L1: 0 });
     setTeleopProcessor(0);
     setTeleopNet(0);
   };
