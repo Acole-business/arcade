@@ -2,6 +2,7 @@
 
 import type React from "react";
 
+import { Analytics } from "@vercel/analytics/react"
 import ASCIIText from "@/components/ASCIIText/ASCIIText";
 import Aurora from "@/components/Aurora/Aurora";
 import { motion } from "framer-motion";
