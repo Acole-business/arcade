@@ -156,7 +156,7 @@ export default function Home() {
           router.push("/game/space-invaders");
           break;
         case "46":
-          router.push("/game/coming-soon")
+          router.push("/game/floppy-bird")
         default:
           console.log("Invalid command");
       }
@@ -200,7 +200,7 @@ export default function Home() {
                   <span className="absolute hidden -right-2 top-0 h-full w-2 bg-green-500 animate-blink duration-800"></span>
                 </h1>
               </div>
-              <div className="text-xs">v2.0.0 | Games: 45
+              <div className="text-xs">v2.0.0 | Games: 46
               </div>
             </div>
 
@@ -637,10 +637,10 @@ export default function Home() {
                     </li>
                   <li>
                     <Link
-                      href="/game/coming-soon"
+                      href="/game/floppy-bird"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
-                      <span className="text-yellow-400">[46]</span> Coming Soon - More games to come!
+                      <span className="text-yellow-400">[46]</span> Floppy Bird - Fly through the pipes and avoid obstacles
                     </Link>
                   </li>
                 </ul>
