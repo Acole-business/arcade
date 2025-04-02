@@ -21,140 +21,142 @@ export default function Home() {
           router.push("/other-links/teleport");
           break;
         case "1":
-          router.push("/games/blackjack");
+          router.push("/game/blackjack");
           break;
         case "2":
-          router.push("/games/snake");
+          router.push("/game/snake");
           break;
         case "3":
-          router.push("/games/hangman");
+          router.push("/game/hangman");
           break;
         case "4":
-          router.push("/games/rock-paper-scissors");
+          router.push("/game/rock-paper-scissors");
           break;
         case "5":
-          router.push("/games/guess-the-number");
+          router.push("/game/guess-the-number");
           break;
         case "6":
-          router.push("/games/memory-card");
+          router.push("/game/memory-card");
           break;
         case "7":
-          router.push("/games/tic-tac-toe");
+          router.push("/game/tic-tac-toe");
           break;
         case "8":
-          router.push("/games/wordle-clone");
+          router.push("/game/wordle-clone");
           break;
         case "9":
-          router.push("/games/minesweeper");
+          router.push("/game/minesweeper");
           break;
         case "10":
-          router.push("/games/simon-says");
+          router.push("/game/simon-says");
           break;
         case "11":
-          router.push("/games/2048");
+          router.push("/game/2048");
           break;
         case "12":
-          router.push("/games/morse-code-trainer");
+          router.push("/game/morse-code-trainer");
           break;
         case "13":
-          router.push("/games/lights-out");
+          router.push("/game/lights-out");
           break;
         case "14":
-          router.push("/games/duck-hunt");
+          router.push("/game/duck-hunt");
           break;
         case "15":
-          router.push("/games/catch-the-target");
+          router.push("/game/catch-the-target");
           break;
         case "16":
-          router.push("/games/typing-speed-challenge");
+          router.push("/game/typing-speed-challenge");
           break;
         case "17":
-          router.push("/games/missile-command");
+          router.push("/game/missile-command");
           break;
         case "18":
-          router.push("/games/tapper");
+          router.push("/game/tapper");
           break;
         case "19":
-          router.push("/games/pixel-hopper");
+          router.push("/game/pixel-hopper");
           break;
         case "20":
-          router.push("/games/pacman");
+          router.push("/game/pacman");
           break;
         case "21":
-          router.push("/games/color-match");
+          router.push("/game/color-match");
           break;
         case "22":
-          router.push("/games/loop-dash");
+          router.push("/game/loop-dash");
           break;
         case "23":
-          router.push("/games/jump-king-lite");
+          router.push("/game/jump-king-lite");
           break;
         case "24":
-          router.push("/games/draw-a-path");
+          router.push("/game/draw-a-path");
           break;
         case "25":
-          router.push("/games/tap-to-zero");
+          router.push("/game/tap-to-zero");
           break;
         case "26":
-          router.push("/games/color-swap");
+          router.push("/game/color-swap");
           break;
         case "27":
-          router.push("/games/stay-on-the-line");
+          router.push("/game/stay-on-the-line");
           break;
         case "28":
-          router.push("/games/one-second-challenge");
+          router.push("/game/one-second-challenge");
           break;
         case "29":
-          router.push("/games/quickest-draw");
+          router.push("/game/quickest-draw");
           break;
         case "30":
-          router.push("/games/what-changed");
+          router.push("/game/what-changed");
           break;
         case "31":
-          router.push("/games/mirror-maze");
+          router.push("/game/mirror-maze");
           break;
         case "32":
-          router.push("/games/emoji-equation");
+          router.push("/game/emoji-equation");
           break;
         case "33":
-          router.push("/games/click-the-smallest");
+          router.push("/game/click-the-smallest");
           break;
         case "34":
-          router.push("/games/blurry-vision");
+          router.push("/game/blurry-vision");
           break;
         case "35":
-          router.push("/games/one-pixel-click");
+          router.push("/game/one-pixel-click");
           break;
         case "36":
-          router.push("/games/emoji-memory-challenge");
+          router.push("/game/emoji-memory-challenge");
           break;
         case "37":
-          router.push("/games/rhythm-arrows");
+          router.push("/game/rhythm-arrows");
           break;
         case "38":
-          router.push("/games/swipe-the-right-way");
+          router.push("/game/swipe-the-right-way");
           break;
         case "39":
-          router.push("/games/button-clicker");
+          router.push("/game/button-clicker");
           break;
         case "40":
-          router.push("/games/chess");
+          router.push("/game/chess");
           break;
         case "41":
-          router.push("/games/tetis");
+          router.push("/game/tetis");
           break;
         case "42":
-          router.push("/games/sudoku");
+          router.push("/game/sudoku");
           break;
         case "43":
-          router.push("/games/hunger-games");
+          router.push("/game/hunger-games");
           break;
         case "44":
-          router.push("/games/uno");
+          router.push("/game/uno");
           break;
         case "45":
-          router.push("/games/space-invaders");
+          router.push("/game/space-invaders");
           break;
+        case "46":
+          router.push("/game/coming-soon")
         default:
           console.log("Invalid command");
       }
@@ -198,7 +200,7 @@ export default function Home() {
                   <span className="absolute hidden -right-2 top-0 h-full w-2 bg-green-500 animate-blink duration-800"></span>
                 </h1>
               </div>
-              <div className="text-xs">v2.0.0 | Games: 44
+              <div className="text-xs">v2.0.0 | Games: 45
               </div>
             </div>
 
@@ -230,7 +232,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/blackjack"
+                      href="/game/blackjack"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[1]</span> Blackjack -
@@ -239,7 +241,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/snake"
+                      href="/game/snake"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[2]</span> Snake -
@@ -248,7 +250,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/hangman"
+                      href="/game/hangman"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[3]</span> Hangman -
@@ -257,7 +259,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/rock-paper-scissors"
+                      href="/game/rock-paper-scissors"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[4]</span> Rock Paper
@@ -266,7 +268,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/guess-the-number"
+                      href="/game/guess-the-number"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[5]</span> Guess the
@@ -275,7 +277,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/memory-card"
+                      href="/game/memory-card"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[6]</span> Memory Card -
@@ -284,7 +286,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/tic-tac-toe"
+                      href="/game/tic-tac-toe"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[7]</span> Tic-Tac-Toe -
@@ -293,7 +295,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/wordle-clone"
+                      href="/game/wordle-clone"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[8]</span> Wordle Clone
@@ -302,7 +304,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/minesweeper"
+                      href="/game/minesweeper"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[9]</span> Minesweeper -
@@ -311,7 +313,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/simon-says"
+                      href="/game/simon-says"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[10]</span> Simon Says -
@@ -320,7 +322,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/2048"
+                      href="/game/2048"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[11]</span> 2048 -
@@ -329,7 +331,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/morse-code-trainer"
+                      href="/game/morse-code-trainer"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[12]</span> Morse Code
@@ -338,7 +340,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/lights-out"
+                      href="/game/lights-out"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[13]</span> Lights Out -
@@ -347,7 +349,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/duck-hunt"
+                      href="/game/duck-hunt"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[14]</span> Duck Hunt -
@@ -356,7 +358,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/catch-the-target"
+                      href="/game/catch-the-target"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[15]</span> Catch the
@@ -365,7 +367,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/typing-speed-challenge"
+                      href="/game/typing-speed-challenge"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[16]</span> Typing Speed
@@ -374,7 +376,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/missile-command"
+                      href="/game/missile-command"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[17]</span> Missile
@@ -383,7 +385,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/tapper"
+                      href="/game/tapper"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[18]</span> Tapper -
@@ -393,7 +395,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/pixel-hopper"
+                      href="/game/pixel-hopper"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[19]</span> Pixel Hopper
@@ -402,7 +404,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/pacman"
+                      href="/game/pacman"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[20]</span> Pacman - Eat
@@ -411,7 +413,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/color-match"
+                      href="/game/color-match"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[21]</span> Color Match
@@ -420,7 +422,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/loop-dash"
+                      href="/game/loop-dash"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[22]</span> Loop Dash -
@@ -429,7 +431,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/jump-king-lite"
+                      href="/game/jump-king-lite"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[23]</span> Jump King
@@ -438,7 +440,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/draw-a-path"
+                      href="/game/draw-a-path"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[24]</span> Draw a Path
@@ -447,7 +449,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/tap-to-zero"
+                      href="/game/tap-to-zero"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[25]</span> Tap to Zero
@@ -456,7 +458,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/color-swap"
+                      href="/game/color-swap"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[26]</span> Color Swap -
@@ -465,7 +467,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/stay-on-the-line"
+                      href="/game/stay-on-the-line"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[27]</span> Stay on the
@@ -474,7 +476,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/one-second-challenge"
+                      href="/game/one-second-challenge"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[28]</span> One-Second
@@ -484,7 +486,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/quickest-draw"
+                      href="/game/quickest-draw"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[29]</span> Quickest
@@ -493,7 +495,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/what-changed"
+                      href="/game/what-changed"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[30]</span> What
@@ -502,7 +504,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/mirror-maze"
+                      href="/game/mirror-maze"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[31]</span> Mirror Maze
@@ -511,7 +513,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/emoji-equation"
+                      href="/game/emoji-equation"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[32]</span> Emoji
@@ -520,7 +522,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/click-the-smallest"
+                      href="/game/click-the-smallest"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[33]</span> Click the
@@ -529,7 +531,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/blurry-vision"
+                      href="/game/blurry-vision"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[34]</span> Blurry
@@ -538,7 +540,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/one-pixel-click"
+                      href="/game/one-pixel-click"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[35]</span> The
@@ -548,7 +550,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/emoji-memory-challenge"
+                      href="/game/emoji-memory-challenge"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[36]</span> Emoji Memory
@@ -557,7 +559,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/rhythm-arrows"
+                      href="/game/rhythm-arrows"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[37]</span> Rhythm
@@ -566,7 +568,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/swipe-the-right-way"
+                      href="/game/swipe-the-right-way"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[38]</span> Swipe the
@@ -575,7 +577,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/button-clicker"
+                      href="/game/button-clicker"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[39]</span> Button Clicker -
@@ -584,7 +586,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/chess"
+                      href="/game/chess"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[40]</span> Chess -
@@ -593,7 +595,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/tetris"
+                      href="/game/tetris"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[41]</span> Tetris -
@@ -602,7 +604,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/sudoku"
+                      href="/game/sudoku"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[42]</span> Sudoku -
@@ -611,7 +613,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/hunger-games"
+                      href="/game/hunger-games"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[43]</span> Hunger Games - Simulator
@@ -619,7 +621,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/games/uno"
+                      href="/game/uno"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[44]</span> Uno - Card game
@@ -627,12 +629,20 @@ export default function Home() {
                     </li>
                     <li>
                     <Link
-                      href="/games/space-invaders"
+                      href="/game/space-invaders"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[45]</span> Space Invaders - Attack Alliens and help save the earth
                     </Link>
                     </li>
+                  <li>
+                    <Link
+                      href="/game/coming-soon"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[46]</span> Coming Soon - More games to come!
+                    </Link>
+                  </li>
                 </ul>
               </section>
 
