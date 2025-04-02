@@ -4,7 +4,7 @@ const ComingSoonPage: React.FC = () => {
     return (
         <div style={styles.container}>
             <h1 style={styles.title}>Coming Soon</h1>
-            <p style={styles.subtitle}>We're working hard to bring this game to you. Stay tuned!</p>
+            <p style={styles.subtitle}>We&apos;re working hard to bring this game to you. Stay tuned!</p>
         </div>
     );
 };
