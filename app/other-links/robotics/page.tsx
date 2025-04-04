@@ -106,6 +106,9 @@ export default function AlgaeAndLevelsSplitPage() {
   const [teleopLevels, setTeleopLevels] = useState({ L4: 0, L3: 0, L2: 0, L1: 0 });
   const [teleopProcessor, setTeleopProcessor] = useState(0);
   const [teleopNet, setTeleopNet] = useState(0);
+  const [autoProcessor, setAutoProcessor] = useState(0);
+  const [autoNet, setAutoNet] = useState(0);
+
 
   const resetAll = () => {
     setAutoLevels({ L4: 0, L3: 0, L2: 0, L1: 0 });
@@ -121,7 +124,11 @@ export default function AlgaeAndLevelsSplitPage() {
           title="Auto"
           levels={autoLevels}
           setLevels={setAutoLevels}
-          hideAlgae
+          processor={autoProcessor}
+          setProcessor={setAutoProcessor} 
+          net={autoNet}
+          setNet={setAutoNet}
+          hideAlgae={false} // Hide algae section for Auto
         />
         <ControlPanel
           title="Teleop"
@@ -131,6 +138,8 @@ export default function AlgaeAndLevelsSplitPage() {
           setProcessor={setTeleopProcessor}
           net={teleopNet}
           setNet={setTeleopNet}
+          hideAlgae={false} // Hide algae section for Teleop
+
         />
       </div>
 
