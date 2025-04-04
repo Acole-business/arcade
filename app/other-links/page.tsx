@@ -41,8 +41,8 @@ const LinksPage: React.FC = () => {
     <StyledContainer>
       <StyledBox>
         <h1>Links</h1>
-        <StyledLink href="/robotics">Robotics</StyledLink>
-        <StyledLink href="/states">States</StyledLink>
+        <StyledLink href="other-links/robotics">Robotics</StyledLink>
+        <StyledLink href="other-links/states">States</StyledLink>
       </StyledBox>
     </StyledContainer>
   );
