@@ -4,12 +4,10 @@ const Page: React.FC = () => {
     return (
         <div>
             <iframe
-                src="https://www.statbotics.io/"
-                width="100%"
-                height="500px"
-                style={{ border: 'none' }}
-                title="Example Iframe"
-            ></iframe>
+          src="https://statbotics.io"
+          className="w-full h-screen border-none"
+          title="stat Botics"
+        ></iframe>
         </div>
     );
 };
