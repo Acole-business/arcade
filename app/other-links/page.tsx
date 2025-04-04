@@ -42,7 +42,7 @@ const LinksPage: React.FC = () => {
       <StyledBox>
         <h1>Links</h1>
         <StyledLink href="other-links/robotics">Robotics</StyledLink>
-        <StyledLink href="other-links/states">States</StyledLink>
+        <StyledLink href="other-links/states">Stats</StyledLink>
       </StyledBox>
     </StyledContainer>
   );
