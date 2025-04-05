@@ -704,7 +704,7 @@ export default function Home() {
           >
             Here
           </a>
-          , Robotics Page{" "}
+          {/*, Robotics Page{" "}
           <a
             href="other-links/robotics"
             rel="noopener noreferrer"
@@ -712,6 +712,14 @@ export default function Home() {
           >
             Here
           </a>
+          , Stats Page{" "}
+          <a
+            href="other-links/stats"
+            rel="noopener noreferrer"
+            className="underline hover:text-green-300"
+          >
+            Here
+          </a> */}
         </p>
         <p className="mt-1">Press F11 for fullscreen experience</p>
       </footer>
