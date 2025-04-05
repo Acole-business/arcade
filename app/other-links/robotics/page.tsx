@@ -20,6 +20,7 @@ function ControlPanel({
   net?: number;
   setNet?: React.Dispatch<React.SetStateAction<number>>;
   hideAlgae?: boolean;
+  hideLevels?: boolean;
 }) {
   const handleIncrement = (level: keyof typeof levels) => {
     setLevels((prev) => ({
@@ -128,7 +129,8 @@ export default function AlgaeAndLevelsSplitPage() {
           setProcessor={setAutoProcessor} 
           net={autoNet}
           setNet={setAutoNet}
-          hideAlgae={false} // Hide algae section for Auto
+          hideAlgae={true} // Hide algae section for Auto
+          hideLevels={true} // Show levels section for Auto
         />
         <ControlPanel
           title="Teleop"
@@ -138,7 +140,8 @@ export default function AlgaeAndLevelsSplitPage() {
           setProcessor={setTeleopProcessor}
           net={teleopNet}
           setNet={setTeleopNet}
-          hideAlgae={false} // Hide algae section for Teleop
+          hideAlgae={true} // Hide algae section for Teleop
+          hideLevels={true} // Show levels section for Teleop
 
         />
       </div>
