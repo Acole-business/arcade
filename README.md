@@ -1,6 +1,6 @@
 # Arcade Project
 
-Welcome to the **Arcade Project**! This repository contains the source code and assets for a customizable arcade game platform.
+Welcome to the **Acole Arcade Project**! This repository contains the source code and assets for a customizable arcade game platform.
 
 ## Features
 
