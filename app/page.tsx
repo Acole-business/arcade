@@ -157,6 +157,8 @@ export default function Home() {
           break;
         case "46":
           router.push("/game/floppy-bird")
+        case "47":
+          router.push("/game/bowling")
         default:
           console.log("Invalid command");
       }
@@ -643,6 +645,14 @@ export default function Home() {
                       <span className="text-yellow-400">[46]</span> Floppy Bird - Fly through the pipes and avoid obstacles
                     </Link>
                   </li>
+                  <li>
+                    <link
+                      href="/game/bowling"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[47]</span> Bowling - Classic bowling game
+                    </link>
+                  </li>
                 </ul>
               </section>
 
@@ -706,7 +716,7 @@ export default function Home() {
           </a>
           {/*, Robotics Page{" "}
           <a
-            href="other-links/robotics"
+            href="other-links/robotics/helper"
             rel="noopener noreferrer"
             className="underline hover:text-green-300"
           >
@@ -714,7 +724,7 @@ export default function Home() {
           </a>
           , Stats Page{" "}
           <a
-            href="other-links/stats"
+            href="other-links/robotics/stats"
             rel="noopener noreferrer"
             className="underline hover:text-green-300"
           >
