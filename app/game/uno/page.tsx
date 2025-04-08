@@ -21,7 +21,7 @@ const GameFrame: React.FC = () => {
         <iframe
           src="https://www.twoplayergames.org/embed/uno-online"
           className="w-full h-screen border-none"
-          title="Hunger Games"
+          title="Uno"
         ></iframe>
       </div>
 
