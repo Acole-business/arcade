@@ -156,9 +156,11 @@ export default function Home() {
           router.push("/game/space-invaders");
           break;
         case "46":
-          router.push("/game/floppy-bird")
+          router.push("/game/floppy-bird");
+          break;
         case "47":
-          router.push("/game/bowling")
+          router.push("/game/bowling");
+          break;
         default:
           console.log("Invalid command");
       }
