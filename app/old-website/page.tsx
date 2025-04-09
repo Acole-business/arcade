@@ -18,7 +18,7 @@ export default function Home() {
     if (e.key === "Enter") {
       switch (command) {
         case "0":
-          router.push("/other-links/teleport");
+          router.push("/smash-the-walls");
           break;
         case "1":
           router.push("/game/blackjack");
@@ -227,38 +227,29 @@ export default function Home() {
                 <ul className="space-y-2 flex flex-grow flex-col">
                   <li>
                     <Link
-                      href="/other-links/teleport"
+                      href="/smash-the-walls"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
-                      <span className="text-yellow-400">[0]</span> Old Acolegames -  
-                      Link to the old Acolegames website
+                      <span className="text-yellow-400">[1]</span> Smash The Walls -
+                      Smash the walls and break the high score
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/game/blackjack"
+                      href="/doge"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
-                      <span className="text-yellow-400">[1]</span> Blackjack -
-                      Classic card game against the dealer
+                      <span className="text-yellow-400">[2]</span> Doge -
+                      A simple game where you can play with the doge meme
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/game/snake"
+                      href="/mine-sweeper"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
-                      <span className="text-yellow-400">[2]</span> Snake -
-                      Navigate and grow your snake
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/game/hangman"
-                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
-                    >
-                      <span className="text-yellow-400">[3]</span> Hangman -
-                      Guess the word before it&apos;s too late
+                      <span className="text-yellow-400">[3]</span> Mine Sweeper -
+                      Classic puzzle game where you clear a minefield without
                     </Link>
                   </li>
                   <li>

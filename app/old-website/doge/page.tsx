@@ -11,7 +11,7 @@ const GameFrame: React.FC = () => {
         <div className="scanline absolute top-0 left-0 w-full h-full pointer-events-none"></div>
 
         <div className="terminal-header flex items-center justify-between mb-4 border-b border-green-500 pb-2">
-          <Link href="/" className="flex items-center gap-2 hover:text-green-400">
+          <Link href="./" className="flex items-center gap-2 hover:text-green-400">
             <ArrowLeft className="h-4 w-4" />
             <span>Back to Arcade</span>
           </Link>
