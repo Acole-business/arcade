@@ -18,7 +18,7 @@ export default function PixelHopperPage() {
             <ArrowLeft className="h-4 w-4" />
             <span>Back to Arcade</span>
           </Link>
-          <div className="text-xs">arrowcole.xyz | Pixel Hopper v1.3</div>
+          <div className="text-xs">acolegames.dev | Pixel Hopper v1.3</div>
         </div>
 
         <PixelHopperGame />

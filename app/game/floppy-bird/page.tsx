@@ -131,7 +131,7 @@ const GameFrame: React.FC = () => {
           <ArrowLeft className="h-4 w-4" />
           <span>Back to Arcade</span>
         </Link>
-        <div className="text-xs">arrowcole.xyz | Floppy Bird v1.0</div>
+        <div className="text-xs">acolegames.dev | Floppy Bird v1.0</div>
       </div>
       {/* Terminal container for the game */}
       <div className="terminal-container flex-1 border border-green-500 rounded-md p-4 relative h-full">

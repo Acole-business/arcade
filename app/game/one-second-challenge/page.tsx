@@ -108,7 +108,7 @@ export default function OneSecondChallenge() {
             <span>Back to Arcade</span>
           </Link>
           <div className="text-xs">
-            arrowcole.xyz | One-Second Challenge v2.0
+            acolegames.dev | One-Second Challenge v2.0
           </div>
         </div>
 

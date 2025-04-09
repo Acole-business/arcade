@@ -211,7 +211,7 @@ export default function Tapper() {
             <ArrowLeft className="h-4 w-4" />
             <span>Back to Arcade</span>
           </Link>
-          <div className="text-xs">arrowcole.xyz | Tapper v1.1</div>
+          <div className="text-xs">acolegames.dev | Tapper v1.1</div>
         </div>
 
         <div className="game-container space-y-6">

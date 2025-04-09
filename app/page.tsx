@@ -18,7 +18,7 @@ export default function Home() {
     if (e.key === "Enter") {
       switch (command) {
         case "0":
-          router.push("/other-links/teleport");
+          router.push("/old-website");
           break;
         case "1":
           router.push("/game/blackjack");
@@ -206,7 +206,7 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 <Terminal className="h-5 w-5" />
                 <h1 className="text-xl font-bold relative">
-                  arrowcole.xyz
+                  acolegames.dev
                   <span className="absolute hidden -right-2 top-0 h-full w-2 bg-green-500 animate-blink duration-800"></span>
                 </h1>
               </div>
@@ -233,7 +233,7 @@ export default function Home() {
                 <ul className="space-y-2 flex flex-grow flex-col">
                   <li>
                     <Link
-                      href="/other-links/teleport"
+                      href="/old-website"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[0]</span> Old Acolegames -  
@@ -688,7 +688,7 @@ export default function Home() {
                     <input
                       type="text"
                       className="w-full bg-transparent border-none outline-none focus:ring-0"
-                      placeholder="Type a command..."
+                      placeholder=" Type a command..."
                       value={command}
                       onChange={(e) => setCommand(e.target.value)}
                       onKeyPress={handleCommand}
