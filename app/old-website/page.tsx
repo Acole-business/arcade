@@ -68,6 +68,48 @@ export default function Home() {
         case "16":
           router.push("old-website/cross-division");
           break;
+        case "17":
+          router.push("old-website/dog-be-spinning");
+          break;
+        case "18":
+          router.push("old-website/double-pressure");
+          break;
+        case "19":
+          router.push("old-website/infinity");
+          break;
+        case "20":
+          router.push("old-website/pug-in-a-rug");
+          break;
+        case "21":
+          router.push("old-website/cursor-effect");
+          break;
+        case "22":
+          router.push("old-website/box-maker");
+          break;
+        case "23":
+          router.push("old-website/maze");
+          break;
+        case "24":
+          router.push("old-website/i-has-a-bucket");
+          break;
+        case "25": 
+          router.push("old-website/paper-clip-sim");
+          break;
+        case "26": 
+          router.push("old-website/rgb");
+          break;
+        case "27": 
+          router.push("old-website/noice");
+          break;
+        case "28": 
+          router.push("old-website/emoji");
+          break;
+        case "29":
+          router.push("old-website/falling-falling");
+          break;
+        case "30":
+          router.push("old-website/solitaire");
+          break;  
         default:
           console.log("Invalid command");
       }
@@ -111,7 +153,7 @@ export default function Home() {
                   <span className="absolute hidden -right-2 top-0 h-full w-2 bg-green-500 animate-blink duration-800"></span>
                 </h1>
               </div>
-              <div className="text-xs">v2.0.0 | Games: 8
+              <div className="text-xs">v2.0.0 | Games: 24
               </div>
             </div>
 
@@ -283,6 +325,132 @@ export default function Home() {
                     >
                       <span className="text-yellow-400">[16]</span> Cross Division -
                       A game where you can cross the division and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/dog-be-spinning"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[17]</span> Dog Be Spinning -
+                      A game where you can spin the dog and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/double-pressure"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[18]</span> Double Pressure -
+                      A game where you can double the pressure and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/infinity"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[19]</span> Infinity -
+                      A game where you can create your own infinity and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/pug-in-a-rug"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[20]</span> Pug In A Rug -
+                      A game where you can create your own pug and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/cursor-effect"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[21]</span> Cursor Effect -
+                      A game where you can create your own cursor and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/box-maker"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[22]</span> Box Maker -
+                      A game where you can create your own box and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/maze"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[23]</span> Maze -
+                      A game where you can create your own maze and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/i-has-a-bucket"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[24]</span> I Has A Bucket -
+                      A photo of a seal with a bucket
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/paper-clip-sim"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[25]</span> Paper Clip Simulator -
+                      A game where you can create your own paper clips and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/rgb"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[26]</span> RGB -
+                      A game where you can create your own RGB and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/noice"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[27]</span> Noice -
+                      A game where you can create your own noise and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/emoji"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[28]</span> Emoji -
+                      A game where you can create your own emoji and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/falling-falling"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[29]</span> Falling Falling -
+                      Watch the falling screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/solitaire"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[30]</span> Solitaire -
+                      A game of cards and strategy, where you have to build the deck
                     </Link>
                   </li>
                 </ul>
