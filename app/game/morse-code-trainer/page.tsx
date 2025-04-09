@@ -478,7 +478,7 @@ export default function MorseCodeTrainer() {
             <span>Back to Arcade</span>
           </Link>
           <div className="text-xs">
-            arrowcole.xyz | Morse Code Trainer v2.2
+            acolegames.dev | Morse Code Trainer v2.2
           </div>
         </div>
 

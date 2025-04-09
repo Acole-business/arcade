@@ -32,7 +32,7 @@ export default function ClickGame() {
             <ArrowLeft className="h-4 w-4" />
             <span>Back to Arcade</span>
           </Link>
-          <div className="text-xs">arrowcole.xyz | Catch The Target v1.0</div>
+          <div className="text-xs">acolegames.dev | Catch The Target v1.0</div>
         </div>
 
         <h1 className="text-2xl mb-4 text-center">Catch the Target!</h1>

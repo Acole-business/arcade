@@ -206,7 +206,7 @@ export default function StayOnTheLine() {
             <span>Back to Arcade</span>
           </Link>
           <div className="text-xs">
-            arrowcole.xyz | Stay on the Line v1.0
+            acolegames.dev | Stay on the Line v1.0
           </div>
         </div>
 

@@ -63,7 +63,7 @@ export default function RhythmArrows() {
             <ArrowLeft className="h-4 w-4" />
             <span>Back to Arcade</span>
           </Link>
-          <div className="text-xs">arrowcole.xyz | Rhythm Arrows v1.0</div>
+          <div className="text-xs">acolegames.dev | Rhythm Arrows v1.0</div>
         </div>
 
         <div className="game-container space-y-6">

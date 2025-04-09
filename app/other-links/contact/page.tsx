@@ -14,7 +14,7 @@ const GameFrame: React.FC = () => {
             <ArrowLeft className="h-4 w-4" />
             <span>Back to Arcade</span>
           </Link>
-          <div className="text-xs">arrowcole.xyz |  Contact</div>
+          <div className="text-xs">acolegames.dev |  Contact</div>
         </div>
 
         <iframe
