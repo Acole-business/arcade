@@ -18,7 +18,7 @@ export default function Home() {
     if (e.key === "Enter") {
       switch (command) {
         case "0":
-          router.push("/other-links/teleport");
+          router.push("/old-website");
           break;
         case "1":
           router.push("/game/blackjack");
@@ -227,7 +227,7 @@ export default function Home() {
                 <ul className="space-y-2 flex flex-grow flex-col">
                   <li>
                     <Link
-                      href="/other-links/teleport"
+                      href="/old-website"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[0]</span> Old Acolegames -  
