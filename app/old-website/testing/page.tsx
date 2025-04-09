@@ -21,7 +21,7 @@ const GameFrame: React.FC = () => {
         <iframe
           src="link here"
           className="w-full h-screen border-none"
-          title="Titlle of the Game"
+          title="Title of the Game"
         ></iframe>
       </div>
 
