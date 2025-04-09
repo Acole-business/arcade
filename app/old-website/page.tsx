@@ -36,13 +36,37 @@ export default function Home() {
           router.push("old-website/check-box-race");
           break;
         case "6":
-          router.push("old-website/cat-bounce");
+          router.push("old-website/move-now-think-later");
           break;
         case "7":
-          router.push("/game/tic-tac-toe");
+          router.push("old-website/cat-bounce");
           break;
         case "8":
-          router.push("/game/wordle-clone");
+          router.push("old-website/man-in-the-dark");
+          break;
+        case "9":
+          router.push("old-website/koalas-to-the-max");
+          break;
+        case "10":
+          router.push("old-website/hacker-typer");
+          break;
+        case "11":
+          router.push("old-website/pointer");
+          break;
+        case "12":
+          router.push("old-website/yesnoif");
+          break;
+        case "13":
+          router.push("old-website/move-block-around");
+          break;
+        case "14":
+          router.push("old-website/snowman");
+          break;
+        case "15":
+          router.push("old-website/boring");
+          break;
+        case "16":
+          router.push("old-website/cross-division");
           break;
         default:
           console.log("Invalid command");
@@ -187,6 +211,78 @@ export default function Home() {
                     >
                       <span className="text-yellow-400">[8]</span> Man In The Dark -
                       A game of stealth and strategy, where you have to avoid the guards
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/koalas-to-the-max"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[9]</span> Koalas To The Max -
+                      A game where you can create your own koalas and watch them dance
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/Hacker-Typer"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[10]</span> Hacker Typer -
+                      A game where you can type like a hacker and create your own code
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/pointer"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                        <span className="text-yellow-400">[11]</span> Pointer -
+                      A game where you have to find the pointer in the picture
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/yesnoif"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[12]</span> Yes No If -
+                      A game where you can ask questions and get answers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/move-block-around"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[13]</span> Move Block Around -
+                      A game where you can move blocks around the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/snowman"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[14]</span> SnowMan -
+                      A game where you can create your own snowman and watch it dance
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/boring"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                        <span className="text-yellow-400">[15]</span> Boring -
+                      A game where you can do nothing and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/cross-division"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[16]</span> Cross Division -
+                      A game where you can cross the division and watch the screen
                     </Link>
                   </li>
                 </ul>
