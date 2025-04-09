@@ -247,7 +247,15 @@ export default function Home() {
             break;
         case "old-30":
             router.push("old-website/solitaire");
-            break;     
+            break;
+        case "contact":
+            router.push("other-links/contact");
+            break;
+        case "helper":
+            router.push("other-links/robotics/helper");
+            break;
+        case "stats":
+            router.push("other-links/robotics/stats");    
         default:
           console.log("Invalid command");
       }
