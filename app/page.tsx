@@ -648,12 +648,12 @@ export default function Home() {
                     </Link>
                   </li>
                   <li>
-                    <link
+                    <Link
                       href="/game/bowling"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[47]</span> Bowling - Classic bowling game
-                    </link>
+                    </Link>
                   </li>
                 </ul>
               </section>
