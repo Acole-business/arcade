@@ -108,6 +108,15 @@ export default function Home() {
                   Available Games:
                 </h2>
                 <ul className="space-y-2 flex flex-grow flex-col">
+                <li>
+                    <Link
+                      href="/"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[0]</span> Home -
+                      Return to the main page
+                    </Link>
+                  </li>
                   <li>
                     <Link
                       href="old-website/smash-the-walls"
