@@ -161,6 +161,12 @@ export default function Home() {
         case "47":
           router.push("/game/bowling");
           break;
+        case "48":
+          router.push("/game/jeopardy");
+          break;
+        case "49":
+          router.push("/game/geoguessr");
+          break;
         default:
           console.log("Invalid command");
       }
@@ -653,6 +659,22 @@ export default function Home() {
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[47]</span> Bowling - Classic bowling game
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/game/jeopardy"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[48]</span> Jeopardy - Classic trivia game
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/game/geoguessr"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[49]</span> Geoguessr - Guess the location based on the image
                     </Link>
                   </li>
                 </ul>
