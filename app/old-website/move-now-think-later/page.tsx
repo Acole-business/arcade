@@ -1,4 +1,4 @@
-// Game 44
+// Game 6
 "use client";
 
 import Link from "next/link";
@@ -19,7 +19,7 @@ const GameFrame: React.FC = () => {
         </div>
 
         <iframe
-          src="https://thatsthefinger.com/"
+          src="https://www.movenowthinklater.com/"
           className="w-full h-screen border-none"
           title="Move Now Think Later"
         ></iframe>
