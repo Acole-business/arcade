@@ -839,6 +839,36 @@ export default function Home() {
                       A game where you can cross the division and watch the screen
                     </Link>
                   </li>
+                  <br />
+                  <h1>Other Links</h1>
+                <br />
+                    <li>
+                        <Link
+                        href="other-links/contact"
+                        className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                        >
+                        <span className="text-yellow-400">[1]</span> Contact -
+                        Contact us for more information
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                        href="other-links/robotics/helper"
+                        className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                        >
+                        <span className="text-yellow-400">[2]</span> Robotics Helper -
+                        A game where you can help the robots and watch them dance
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                        href="other-links/robotics/stats"
+                        className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                        >
+                        <span className="text-yellow-400">[3]</span> Robotics Stats -
+                        A game where you can watch the robots and their stats
+                        </Link>
+                    </li>
                 </ul>
               </section>
 
