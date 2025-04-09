@@ -15,11 +15,11 @@ const GameFrame: React.FC = () => {
             <ArrowLeft className="h-4 w-4" />
             <span>Back to Arcade</span>
           </Link>
-          <div className="text-xs">arrowcole.xyz | Tetris v1.0</div>
+          <div className="text-xs">acolegames.dev | Tetris v1.0</div>
         </div>
 
        {} <iframe
-          src="https://tetris.arrowcole.xyz/"
+          src="https://tetris.acolegames.dev/"
           className="w-full h-screen border-none"
           title="tetris"
         ></iframe>
