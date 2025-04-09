@@ -1,4 +1,4 @@
-// Game 44
+// Game 8
 "use client";
 
 import Link from "next/link";
@@ -19,7 +19,7 @@ const GameFrame: React.FC = () => {
         </div>
 
         <iframe
-          src="https://thatsthefinger.com/"
+          src="https://maninthedark.com/"
           className="w-full h-screen border-none"
           title="That One Finger"
         ></iframe>
