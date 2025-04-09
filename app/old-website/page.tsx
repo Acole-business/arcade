@@ -296,7 +296,7 @@ export default function Home() {
                     <input
                       type="text"
                       className="w-full bg-transparent border-none outline-none focus:ring-0"
-                      placeholder="Type a command..."
+                      placeholder=" Type a command..."
                       value={command}
                       onChange={(e) => setCommand(e.target.value)}
                       onKeyPress={handleCommand}
