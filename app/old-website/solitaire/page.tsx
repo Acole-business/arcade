@@ -1,4 +1,4 @@
-// Game Update Here
+// Game 30
 "use client";
 
 import Link from "next/link";
@@ -15,13 +15,13 @@ const GameFrame: React.FC = () => {
             <ArrowLeft className="h-4 w-4" />
             <span>Back to Arcade</span>
           </Link>
-          <div className="text-xs">acolegames.dev | Name Of Game v1.0</div>
+          <div className="text-xs">acolegames.dev | Solitaire v1.0</div>
         </div>
 
         <iframe
-          src="link here"
+          src="https://www.google.com/logos/fnbx/solitaire/standalone.html"
           className="w-full h-screen border-none"
-          title="Title of the Game"
+          title="Solitaire"
         ></iframe>
       </div>
 
