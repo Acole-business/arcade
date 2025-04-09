@@ -15,13 +15,13 @@ const GameFrame: React.FC = () => {
             <ArrowLeft className="h-4 w-4" />
             <span>Back to Arcade</span>
           </Link>
-          <div className="text-xs">acolegames.dev | Smash The Walls v1.0</div>
+          <div className="text-xs">acolegames.dev | Doge v1.0</div>
         </div>
 
         <iframe
-          src="https://smashthewalls.com/"
+          src="https://longdogechallenge.com/"
           className="w-full h-screen border-none"
-          title="Smash The Walls"
+          title="Doge"
         ></iframe>
       </div>
 
