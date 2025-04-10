@@ -598,7 +598,7 @@ export default function Home() {
           </a>{" "}
           and{" "}
           <a
-            href="acolegames.dev"
+            href="https://acolegames.dev"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-green-300"
