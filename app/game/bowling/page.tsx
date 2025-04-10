@@ -19,7 +19,7 @@ const GameFrame: React.FC = () => {
         </div>
 
         <iframe
-          src="https://www.twoplayergames.org/embed/3d-bowling"
+          src="https://bowling-r3f.vercel.app/"
           className="w-full h-screen border-none"
           title="Bowling"
         ></iframe>
