@@ -522,7 +522,7 @@ export default function Home() {
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[35]</span> WTF -
-                      A screen of only the word "WTF" and nothing else
+                      A screen of only the word &quot;WTF&quot; and nothing else
                     </Link>
                   </li>
                   <li>
