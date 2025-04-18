@@ -254,6 +254,33 @@ export default function Home() {
         case "old-30":
             router.push("old-website/solitaire");
             break;
+        case "old-31":
+            router.push("old-website/calculator");
+            break;
+        case "old-32":
+            router.push("old-website/pico-park");
+            break;
+        case "old-33":
+            router.push("old-website/google-fued");
+            break;
+        case "old-34":
+            router.push("old-website/rings");
+            break;
+        case "old-35":
+            router.push("old-website/wtf");
+            break;
+        case "old-36":
+            router.push("old-website/the-zen");
+            break;
+        case "old-37":
+            router.push("old-website/he-ho");
+            break;
+        case "old-38":
+            router.push("old-website/find-the-cow");
+            break;
+        case "old-39":
+            router.push("old-website/drawing");
+            break;
         case "contact":
             router.push("other-links/contact");
             break;
@@ -306,7 +333,7 @@ export default function Home() {
                 </h1>
               </div>
               <div className="text-xs">v2.0.0 | Games: 79 | Pages: 3
-                {/* New Games: 49 | Old Games: 30 | Pages: 3 */}
+                {/* New Games: 49 | Old Games: 39 | Pages: 3 */}
               </div>
             </div>
 
@@ -1038,6 +1065,87 @@ export default function Home() {
                       A game of cards and strategy, where you have to build the deck
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="old-website/calculator"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[31]</span> Calculator -
+                      A game where you try to solve the math problems as fast as you can
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/pico-park"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[32]</span> Pico Park -
+                      A game where you can play with your friends and solve puzzles together
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/google-fued"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[33]</span> Google Feud -
+                      A game where you can guess the top search results for a given query
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/rings"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[34]</span> Rings -
+                      A game where you can create your own rings and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/wtf"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[35]</span> WTF -
+                      A screen of only the word &quot;WTF&quot; and nothing else
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/the-zen"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[36]</span> The Zen -
+                      A game where you can create your own zen and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/he-ho"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[37]</span> HE HO -
+                      A game where you can create your own HE HO and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/find-the-cow"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[38]</span> Find The Cow -
+                      A game where you can find the cow in the picture
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/drawing"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[39]</span> Drawing -
+                      A game where you can draw on the screen and watch the screen
+                    </Link>
+                  </li>
 
                   <br />
                   <h1>Other Links</h1>
@@ -1105,7 +1213,7 @@ export default function Home() {
           </a>{" "}
           and{" "}
           <a
-            href="acolegames.dev"
+            href="https://acolegames.dev"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-green-300"
