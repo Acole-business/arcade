@@ -236,8 +236,8 @@ export default function Home() {
                       href="/old-website"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
-                      <span className="text-yellow-400">[0]</span> Old Acolegames -  
-                      Link to the old Acolegames website
+                      <span className="text-yellow-400">[0]</span> Old Games
+                      
                     </Link>
                   </li>
                   <li>
