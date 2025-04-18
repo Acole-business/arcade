@@ -18,7 +18,7 @@ const GameFrame: React.FC = () => {
         </div>
 
         <iframe
-          src="https://aaroncole-arcade-form.vercel.app/"
+          src="https://arcade-form.vercel.app/"
           className="w-full h-screen border-none"
           title="Contact"
         ></iframe>
