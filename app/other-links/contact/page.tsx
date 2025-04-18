@@ -18,7 +18,7 @@ const GameFrame: React.FC = () => {
         </div>
 
         <iframe
-          src="https://forms.gle/1dxn198dbzmi3iH37"
+          src="https://form.acoledesign.xyz/arrowcole.html"
           className="w-full h-screen border-none"
           title="Contact"
         ></iframe>
