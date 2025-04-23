@@ -1149,6 +1149,15 @@ export default function Home() {
                       A game where you can draw on the screen and watch the screen
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="old-website/rr"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[40]</span> RR -
+                      A game where you can create your own RR and watch the screen
+                    </Link>
+                  </li>
 
                   <br />
                   <h1>Other Links</h1>
