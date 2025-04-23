@@ -281,6 +281,9 @@ export default function Home() {
         case "old-39":
             router.push("old-website/drawing");
             break;
+        case "old-40":
+            router.push("old-website/rr");
+            break;
         case "contact":
             router.push("other-links/contact");
             break;
@@ -332,8 +335,8 @@ export default function Home() {
                   <span className="absolute hidden -right-2 top-0 h-full w-2 bg-green-500 animate-blink duration-800"></span>
                 </h1>
               </div>
-              <div className="text-xs">v2.0.0 | Games: 79 | Pages: 3
-                {/* New Games: 49 | Old Games: 39 | Pages: 3 */}
+              <div className="text-xs">v2.0.0 | Games: 89 | Pages: 3
+                {/* New Games: 49 | Old Games: 40 | Pages: 3 */}
               </div>
             </div>
 
