@@ -210,7 +210,7 @@ export default function Home() {
                   <span className="absolute hidden -right-2 top-0 h-full w-2 bg-green-500 animate-blink duration-800"></span>
                 </h1>
               </div>
-              <div className="text-xs">v2.0.0 | Games: 47
+              <div className="text-xs">v2.0.0 | Games: 49
               </div>
             </div>
 
