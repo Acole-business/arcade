@@ -137,6 +137,9 @@ export default function Home() {
         case "39":
           router.push("old-website/drawing");
           break;
+          case "40":
+            router.push("old-website/rr");
+            break;
         default:
           console.log("Invalid command");
       }
@@ -180,7 +183,7 @@ export default function Home() {
                   <span className="absolute hidden -right-2 top-0 h-full w-2 bg-green-500 animate-blink duration-800"></span>
                 </h1>
               </div>
-              <div className="text-xs">v2.0.0 | Games: 24
+              <div className="text-xs">v2.0.0 | Games: 40
               </div>
             </div>
 
@@ -559,6 +562,15 @@ export default function Home() {
                     >
                       <span className="text-yellow-400">[39]</span> Drawing -
                       A game where you can draw on the screen and watch the screen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="old-website/rr"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[40]</span> RR -
+                      A game where you can watch the Rick Roll video and nothing else
                     </Link>
                   </li>
                 </ul>
