@@ -291,7 +291,11 @@ export default function Home() {
             router.push("other-links/robotics/helper");
             break;
         case "stats":
-            router.push("other-links/robotics/stats");    
+            router.push("other-links/robotics/stats");   
+            break;
+        case "music":
+            router.push("Music");
+            break; 
         default:
           console.log("Invalid command");
       }
@@ -1189,6 +1193,15 @@ export default function Home() {
                         A game where you can watch the robots and their stats
                         </Link>
                     </li>
+                    <li>
+                        <Link
+                        href="Music/"
+                        className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                        >
+                        <span className="text-yellow-400">[4]</span> Music -
+                        Listen to music from the Acole Music
+                        </Link>
+                    </li>
                 </ul>
               </section>
 
@@ -1249,6 +1262,7 @@ export default function Home() {
           >
             Here
           </a>
+          
           {/*, Robotics Page{" "}
           <a
             href="other-links/robotics/helper"
