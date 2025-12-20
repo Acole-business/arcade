@@ -21,7 +21,7 @@ export default function Home() {
           router.push("/old-website");
           break;
         case "1":
-          router.push("/game/blackjack");
+          router.push("/game/old-blackjack");
           break;
         case "2":
           router.push("/game/snake");
@@ -167,6 +167,9 @@ export default function Home() {
         case "49":
           router.push("/game/geoguessr");
           break;
+        case "50":
+          router.push("/game/new-blackjack");
+          break;
         default:
           console.log("Invalid command");
       }
@@ -242,7 +245,7 @@ export default function Home() {
                   </li>
                   <li>
                     <Link
-                      href="/game/blackjack"
+                      href="/game/old-blackjack"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[1]</span> Blackjack -
@@ -675,6 +678,14 @@ export default function Home() {
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[49]</span> Geoguessr - Guess the location based on the image
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/game/new-blackjack"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[50]</span> New Blackjack - Classic card game
                     </Link>
                   </li>
                 </ul>

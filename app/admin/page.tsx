@@ -18,7 +18,7 @@ export default function Home() {
     if (e.key === "Enter") {
       switch (command) {
         case "1":
-          router.push("/game/blackjack");
+          router.push("/game/old-blackjack");
           break;
         case "2":
           router.push("/game/snake");
@@ -163,6 +163,9 @@ export default function Home() {
           break;
         case "49":
           router.push("/game/geoguessr");
+          break;
+        case "50":
+          router.push("/game/new-blackjack");
           break;
         case "old-1":
             router.push("/old-website/smash-the-walls");
@@ -364,7 +367,7 @@ export default function Home() {
                  <h1>New Site</h1>
                   <li>
                     <Link
-                      href="/game/blackjack"
+                      href="/game/old-blackjack"
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[1]</span> Blackjack -
@@ -797,6 +800,14 @@ export default function Home() {
                       className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
                     >
                       <span className="text-yellow-400">[49]</span> Geoguessr - Guess the location based on the image
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/game/new-blackjack"
+                      className="block p-2 hover:bg-green-900 hover:bg-opacity-30 transition-colors"
+                    >
+                      <span className="text-yellow-400">[50]</span> New Blackjack - Classic card game
                     </Link>
                   </li>
                   <br />
